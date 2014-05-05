@@ -12,6 +12,8 @@
 
 #import "AddUserViewController.h"
 
+#import "ImageTableViewCell.h"
+
 @interface MasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
@@ -30,12 +32,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.tableView.allowsMultipleSelectionDuringEditing = YES;
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
+    
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(gotoAddUserController:)];
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    self.detailViewController.managedObjectContext = self.managedObjectContext;
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,6 +54,7 @@
 {
      self.addUserViewController = [self.storyboard  instantiateViewControllerWithIdentifier:@"addUser"];
     [self.addUserViewController setManagedObjectContext:self.managedObjectContext];
+    [self.addUserViewController setMasterViewController:self];
     [self.navigationController pushViewController:self.addUserViewController animated:YES];
     
 }
@@ -89,7 +95,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ImageTableViewCell" forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
@@ -130,11 +136,17 @@
     }
 }
 
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    return !self.tableView.editing;
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+        [[segue destinationViewController] setManagedObjectContext:self.managedObjectContext];
         [[segue destinationViewController] setDetailItem:object];
     }
 }
@@ -238,10 +250,11 @@
 }
  */
 
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+- (void)configureCell:(ImageTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[object valueForKey:@"name"] description];
+    User *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    cell.name.text = [[object valueForKey:@"name"] description];
+    [cell.thumbnail setImage:[object thumbnail]];
 }
 
 @end

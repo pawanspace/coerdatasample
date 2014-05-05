@@ -2,7 +2,7 @@
 //  Job.m
 //  CoreDataSample
 //
-//  Created by Chopra, Pawan on 5/2/14.
+//  Created by Pawan Chopra on 5/4/14.
 //  Copyright (c) 2014 dummiesmind. All rights reserved.
 //
 
@@ -12,7 +12,7 @@
 
 @implementation Job
 
-@synthesize name;
+@dynamic name;
 @dynamic jobToUser;
 
 @end

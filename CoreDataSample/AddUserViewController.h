@@ -13,16 +13,25 @@
 
 #import <CoreData/CoreData.h>
 
-@interface AddUserViewController : UIViewController
+@interface AddUserViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @property (strong, nonatomic) MasterViewController *masterViewController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-//@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 
 @property (weak, nonatomic) IBOutlet UITextField *name;
+
+@property (strong, nonatomic) IBOutlet UITextField *email;
+
+@property (strong, nonatomic) IBOutlet UITextField *phoneNumber;
 
 @property (weak, nonatomic) IBOutlet UIButton *saveButton;
 
 @property (strong, nonatomic) User *user;
 
+@property (strong, nonatomic) IBOutlet UIImageView *userImage;
+
+- (IBAction)addImage:(id)sender;
+
 @end
+
+

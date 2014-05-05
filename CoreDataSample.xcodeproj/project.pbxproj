@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E06D3DA1915615400E5EE81 /* EditUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E06D3D91915615400E5EE81 /* EditUserViewController.m */; };
+		7E06D3DD1916DDF700E5EE81 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E06D3DC1916DDF700E5EE81 /* User.m */; };
+		7E06D3E01916DDF700E5EE81 /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E06D3DF1916DDF700E5EE81 /* Job.m */; };
+		7E06D3E31916E5FE00E5EE81 /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E06D3E21916E5FE00E5EE81 /* ImageTableViewCell.m */; };
 		DC6BB42619140F0400B21102 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6BB42519140F0400B21102 /* Foundation.framework */; };
 		DC6BB42819140F0400B21102 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6BB42719140F0400B21102 /* CoreGraphics.framework */; };
 		DC6BB42A19140F0400B21102 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6BB42919140F0400B21102 /* UIKit.framework */; };
@@ -27,8 +31,6 @@
 		DC6BB45B19140F0400B21102 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC6BB45919140F0400B21102 /* InfoPlist.strings */; };
 		DC6BB45D19140F0400B21102 /* CoreDataSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6BB45C19140F0400B21102 /* CoreDataSampleTests.m */; };
 		DC6BB46B191418E700B21102 /* AddUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC6BB46A191418E700B21102 /* AddUserViewController.m */; };
-		DC87A5DF191484C400734D29 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = DC87A5DE191484C400734D29 /* User.m */; };
-		DC87A5E2191484C500734D29 /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = DC87A5E1191484C500734D29 /* Job.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E06D3D81915615400E5EE81 /* EditUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditUserViewController.h; sourceTree = "<group>"; };
+		7E06D3D91915615400E5EE81 /* EditUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditUserViewController.m; sourceTree = "<group>"; };
+		7E06D3DB1916DDF700E5EE81 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		7E06D3DC1916DDF700E5EE81 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		7E06D3DE1916DDF700E5EE81 /* Job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Job.h; sourceTree = "<group>"; };
+		7E06D3DF1916DDF700E5EE81 /* Job.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Job.m; sourceTree = "<group>"; };
+		7E06D3E11916E5FE00E5EE81 /* ImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTableViewCell.h; sourceTree = "<group>"; };
+		7E06D3E21916E5FE00E5EE81 /* ImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewCell.m; sourceTree = "<group>"; };
 		DC6BB42219140F0400B21102 /* CoreDataSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6BB42519140F0400B21102 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC6BB42719140F0400B21102 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,10 +78,6 @@
 		DC6BB45C19140F0400B21102 /* CoreDataSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataSampleTests.m; sourceTree = "<group>"; };
 		DC6BB469191418E700B21102 /* AddUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddUserViewController.h; sourceTree = "<group>"; };
 		DC6BB46A191418E700B21102 /* AddUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddUserViewController.m; sourceTree = "<group>"; };
-		DC87A5DD191484C400734D29 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		DC87A5DE191484C400734D29 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		DC87A5E0191484C500734D29 /* Job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Job.h; sourceTree = "<group>"; };
-		DC87A5E1191484C500734D29 /* Job.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Job.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,14 +147,18 @@
 				DC6BB43919140F0400B21102 /* Main_iPhone.storyboard */,
 				DC6BB43C19140F0400B21102 /* Main_iPad.storyboard */,
 				DC6BB44219140F0400B21102 /* MasterViewController.h */,
+				7E06D3E11916E5FE00E5EE81 /* ImageTableViewCell.h */,
+				7E06D3D81915615400E5EE81 /* EditUserViewController.h */,
+				7E06D3D91915615400E5EE81 /* EditUserViewController.m */,
+				7E06D3E21916E5FE00E5EE81 /* ImageTableViewCell.m */,
 				DC6BB44319140F0400B21102 /* MasterViewController.m */,
 				DC6BB44519140F0400B21102 /* DetailViewController.h */,
 				DC6BB44619140F0400B21102 /* DetailViewController.m */,
 				DC6BB44819140F0400B21102 /* Images.xcassets */,
-				DC87A5DD191484C400734D29 /* User.h */,
-				DC87A5E0191484C500734D29 /* Job.h */,
-				DC87A5E1191484C500734D29 /* Job.m */,
-				DC87A5DE191484C400734D29 /* User.m */,
+				7E06D3DB1916DDF700E5EE81 /* User.h */,
+				7E06D3DE1916DDF700E5EE81 /* Job.h */,
+				7E06D3DF1916DDF700E5EE81 /* Job.m */,
+				7E06D3DC1916DDF700E5EE81 /* User.m */,
 				DC6BB43F19140F0400B21102 /* CoreDataSample.xcdatamodeld */,
 				DC6BB42E19140F0400B21102 /* Supporting Files */,
 			);
@@ -228,7 +238,7 @@
 		DC6BB41A19140F0400B21102 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = dummiesmind;
 				TargetAttributes = {
 					DC6BB44D19140F0400B21102 = {
@@ -282,12 +292,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E06D3DA1915615400E5EE81 /* EditUserViewController.m in Sources */,
 				DC6BB44719140F0400B21102 /* DetailViewController.m in Sources */,
-				DC87A5DF191484C400734D29 /* User.m in Sources */,
+				7E06D3DD1916DDF700E5EE81 /* User.m in Sources */,
 				DC6BB44419140F0400B21102 /* MasterViewController.m in Sources */,
-				DC87A5E2191484C500734D29 /* Job.m in Sources */,
 				DC6BB43819140F0400B21102 /* AppDelegate.m in Sources */,
 				DC6BB46B191418E700B21102 /* AddUserViewController.m in Sources */,
+				7E06D3E01916DDF700E5EE81 /* Job.m in Sources */,
+				7E06D3E31916E5FE00E5EE81 /* ImageTableViewCell.m in Sources */,
 				DC6BB44119140F0400B21102 /* CoreDataSample.xcdatamodeld in Sources */,
 				DC6BB43419140F0400B21102 /* main.m in Sources */,
 			);
@@ -351,7 +363,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -391,7 +402,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -450,7 +460,6 @@
 		DC6BB46419140F0400B21102 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoreDataSample.app/CoreDataSample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -473,7 +482,6 @@
 		DC6BB46519140F0400B21102 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoreDataSample.app/CoreDataSample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
